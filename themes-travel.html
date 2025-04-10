@@ -1,0 +1,16 @@
+<div class="dialogue">
+  <p><strong>Receptionist:</strong> <span onclick="speak('Good afternoon! Welcome to the Grand Empire Hotel. Do you have a reservation?')">Good afternoon! Welcome to the Grand Empire Hotel. <b>[Click to hear]</b></span></p>
+  <p><strong>You:</strong> Yes, I made a reservation under the name Silva. It should be for three nights.</p>
+</div>
+<div class="grammar-box">
+  <h3>🧠 Grammar</h3>
+  <p>Present Perfect + Present Simple</p>
+</div>
+
+<script>
+function speak(text) {
+  const msg = new SpeechSynthesisUtterance(text);
+  msg.lang = 'en-US';
+  speechSynthesis.speak(msg);
+}
+</script>
